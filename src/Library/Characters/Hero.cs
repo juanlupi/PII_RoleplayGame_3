@@ -23,14 +23,9 @@ namespace RoleplayGame
             }
         }
 
-        public Hero(string name)
-            : base(name)
+        public void GetEnemyVP(Enemy enemy)
         {
-        }
-
-        public GetEnemyVP(Enemy enemy)
-        {
-            this.VP += enemy.VP
+            this.VP += enemy.VP;
         }
 
     }

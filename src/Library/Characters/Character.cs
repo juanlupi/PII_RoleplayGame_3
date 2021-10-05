@@ -14,7 +14,7 @@ namespace RoleplayGame
 
         public string Name { get; set; }
         
-        public abstract int AttackValue
+        public virtual int AttackValue
         {
             get
             {
@@ -30,7 +30,7 @@ namespace RoleplayGame
             }
         }
 
-        public abstract int DefenseValue
+        public virtual int DefenseValue
         {
             get
             {
