@@ -5,6 +5,14 @@ namespace RoleplayGame
     public class SpellsBook: IMagicalAttackItem, IMagicalDefenseItem
     {
         private List<ISpell> spells = new List<ISpell>();
+
+        public int Spells
+        {
+            get
+            {
+                return this.spells.Count;
+            }
+        }
         
         public int AttackValue
         {

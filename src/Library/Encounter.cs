@@ -9,6 +9,22 @@ namespace RoleplayGame
         private List<Hero> heroes = new List<Hero>();
         private List<Enemy> enemies = new List<Enemy>();
 
+        public int EnemiesRemaining 
+        {
+            get
+            {
+                return this.enemies.Count;
+            }
+        }
+
+        public int HeroesRemmaining 
+        {
+            get
+            {
+                return this.heroes.Count;
+            }
+        }
+
         public void AddHero(Hero hero)
         {
             this.heroes.Add(hero);
@@ -90,6 +106,7 @@ namespace RoleplayGame
             }
         }
 
+        //Encounter
         public void StartEncounter()
         {
             if (this.heroes.Count <= 0 || this.enemies.Count <= 0 )

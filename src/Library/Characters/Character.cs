@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 namespace RoleplayGame
 {
+    // Clase base Character
     public abstract class Character: ICharacter
     {
         protected int health = 100;
