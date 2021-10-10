@@ -14,12 +14,12 @@ namespace RoleplayGame
         {
             get 
             {
-                return this.VP;
+                return this.vp;
             }
             
             set
             {
-                this.VP = value;
+                this.vp = value;
             }
         }
 

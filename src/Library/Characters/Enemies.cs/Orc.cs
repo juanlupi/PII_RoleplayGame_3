@@ -8,7 +8,6 @@ namespace RoleplayGame
         {
             this.AddItem(new Axe());
             this.AddItem(new Helmet());
-            this.AddItem(new Shield());
         }
     }
 }

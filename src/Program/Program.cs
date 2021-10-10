@@ -13,19 +13,27 @@ namespace Program
 
             Wizard gandalf = new Wizard("Gandalf");
             gandalf.AddItem(book);
-
             Dwarf gimli = new Dwarf("Gimli");
+            Knight knight = new Knight("Franco");
+            Archer archer = new Archer("Juan");
 
-            Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
-            Console.WriteLine($"Gandalf attacks Gimli with ⚔️ {gandalf.AttackValue}");
+            Orc orc1 = new Orc("Luis",2);
+            Orc orc2 = new Orc("Josema",4);
+            Orc orc3 = new Orc("Pedro",3);
+            Orc orc4 = new Orc("Edinson",3);
+            Viking viking = new Viking("Eivor",7);
 
-            gimli.ReceiveAttack(gandalf.AttackValue);
+            Encounter battlefield = new Encounter();
+            battlefield.AddEnemy(orc1);
+            battlefield.AddEnemy(orc2);
+            battlefield.AddEnemy(orc3);
+            battlefield.AddEnemy(orc4);
+            battlefield.AddEnemy(viking);
+           
+            battlefield.AddHero(knight);
+            battlefield.AddHero(archer);
 
-            Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
-
-            gimli.Cure();
-
-            Console.WriteLine($"Someone cured Gimli. Gimli now has ❤️ {gimli.Health}");
+            battlefield.StartEncounter();
         }
     }
 }
